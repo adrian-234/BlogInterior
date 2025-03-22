@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Interior</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/4455646216.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>VENCE.</div>
-        <div>
-            <a href="">Example</a>
+        <div class="logo">VENCE.</div>
+        <div class="horizontal_list">
+            <a href="" id="active_page">Example</a>
             <a href="">Inspiration</a>
             <a href="">Tutorials</a>
             <a href="">Courses</a>
         </div>
-        <div>
+        <div class="horizontal_list">
             <a href="">Fb</a>
             <a href="">Tw</a>
             <a href="">Ln</a>
-            icon helye
+            <div id="divider_line"></div>
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
 
@@ -28,16 +37,16 @@
             <p></p>
         </div>
 
-        <div>
+        <div id="image_counter">
             <hr>
-            <p></p>
+            <p id="image_count">1/5</p>
         </div>
     </div>
 
-    <div>
+    <div class="category_header">
         <h2>Design is not just what it looks like and feels like.</h2>
-        <div>
-            <p>All</p>
+        <div class="category_selector">
+            <p class="active_category">All</p>
             <p>Modern</p>
             <p>Industrial</p>
             <p>Art Moderne</p>
@@ -47,96 +56,112 @@
         </div>
     </div>
 
-    <div>
+    <div id="basic_grid">
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\60b6a82f445a986c821ff5f1e3d04e6c.jpg" alt="Látványterv 1">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\56b7fb1561630beb8050bfcafbc8bbdc.jpg" alt="Látványterv 2">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\04090b9a3b6c11bd172ac7900ed6aa58.jpg" alt="Látványterv 3">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\ecbfbc356290aa158ead3e19f45cb390.jpg" alt="Látványterv 4">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\0732065d9740c5dae877f91d5f8153c3.jpg" alt="Látványterv 5">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\e8a3f3f2c1d7a7473264eaa82390c4ba.jpg" alt="Látványterv 6">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\3f1034f60d9771b5933a28f2690e11c0.jpg" alt="Látványterv 7">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\0309947decaf61870ebde55925ccedef.jpg" alt="Látványterv 8">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="imgs\4b3f67f077e18992df78d3549bc4c91c.jpg" alt="Látványterv 9">
+            <p class="date">29.Jun.2021</p>
+            <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
         </div>
     </div>
 
-    <h2>Trending</h2>
+    <div class="category_header">
+        <h2>Trending</h2>
+    </div>
 
-    <div>
+    <div id="trending">
         <div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
-        </div><div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
-        </div><div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
-        </div><div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
-        </div><div>
-            <img src="" alt="">
-            <p>29.Jun.2021</p>
-            <p>Richard Norton photorealistic rendering as real photos</p>
+            <img src="./imgs/346352ff9e46472a3a044e10d3f79203.jpg" alt="Népszerű látványterv 1">
+            <div class="trending_text_container">
+                <p class="date">29.Jun.2021</p>
+                <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
+        </div>
+        <div>
+            <img src="imgs\c7fec03bbb8cb8c0331d76cf82695541.jpg" alt="Népszerű látványterv 2">
+            <div class="trending_text_container">
+                <p class="date">29.Jun.2021</p>
+                <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
+        </div>
+        <div>
+            <img src="imgs\80c9f32c416e796dcf6a1e3b3575b0d0.jpg" alt="Népszerű látványterv 3">
+            <div class="trending_text_container">
+                <p class="date">29.Jun.2021</p>
+                <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
+        </div>
+        <div>
+            <img src="imgs\d76bbc0a2ab58eca947643aaef9bcbf3.jpg" alt="Népszerű látványterv 4">
+            <div class="trending_text_container">
+                <p class="date">29.Jun.2021</p>
+                <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
+        </div>
+        <div>
+            <img src="imgs\c08cdd3e01284154059ed2698f3ca701.jpg" alt="Népszerű látványterv 5">
+            <div class="trending_text_container">
+                <p class="date">29.Jun.2021</p>
+                <p class="design_title">Richard Norton photorealistic rendering as real photos</p>
+            </div>
         </div>
     </div>
 
     <footer>
-        <div>
-            <div>VENCE Studio.</div>
-            <div>
+        <div class="horizontal_list">
+            <div class="logo">VENCE Studio.</div>
+            <div class="horizontal_list">
                 <a href="">About Studio</a>
                 <a href="">Archive</a>
                 <a href="">Contact Us</a>
             </div>
-            <div>
+            <div class="horizontal_list">
                 <a href="">Fb</a>
                 <a href="">Tw</a>
                 <a href="">Ln</a>
             </div>
         </div>
         <hr>
-        <div>
+        <div class="horizontal_list">
             <p>1088, North Street, Alexandria, AU</p>
             <p>© 2022, All Rights Reserved</p>
         </div>
