@@ -23,6 +23,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 15px;
 }
 
@@ -33,15 +34,17 @@ body {
 
 /* --------- Header --------- */
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
     margin: 20px 50px
 }
 
 header .logo {
     color: #495057;
+}
+
+header .logo #colored_dot {
+    color: #ddbea9;
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 header .horizontal_list a {
@@ -63,7 +66,7 @@ header .horizontal_list .fa-magnifying-glass {
 }
 
 header .horizontal_list #divider_line {
-    width: 2px;
+    width: 1px;
     height: 12px;
 
     background-color: #E5E5E5;
@@ -78,6 +81,8 @@ header .horizontal_list #divider_line {
     margin: 0 50px;
 
     background-color: darkgray;
+
+    border-radius: 3px;
 }
 
 #image_counter {
@@ -95,7 +100,7 @@ header .horizontal_list #divider_line {
 
 #image_counter hr {
     width: 44px;
-    height: 2px;
+    height: 1px;
 
     border: none;
 
@@ -111,6 +116,7 @@ header .horizontal_list #divider_line {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     margin: 50px 50px 20px;
 }
@@ -125,8 +131,9 @@ header .horizontal_list #divider_line {
 .category_header .category_selector {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 10px;
 
     color: #C4C4C4;
@@ -168,6 +175,10 @@ header .horizontal_list #divider_line {
     font-size: 16px;
 
     margin-bottom: 15px;
+}
+
+#basic_grid > div:hover .design_title {
+    color: #CCD5AE;
 }
 
 #trending {
@@ -216,6 +227,16 @@ header .horizontal_list #divider_line {
 
 .trending_text_container .design_title {
     color: #F8F9FA;
+}
+
+#trending > div:hover img {
+    opacity: 0.65;
+}
+
+@media screen and (max-width: 500px) {
+    #basic_grid, #trending {
+        grid-template-columns: repeat(2, 1fr);
+    }    
 }
 
 /* --------- Footer --------- */
