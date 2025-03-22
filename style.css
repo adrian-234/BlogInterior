@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 15px;
+    column-gap: 25px;
 }
 
 .horizontal_list a {
@@ -34,7 +34,7 @@ body {
 
 /* --------- Header --------- */
 header {
-    margin: 20px 50px
+    margin: 37px 100px
 }
 
 header .logo {
@@ -78,11 +78,41 @@ header .horizontal_list #divider_line {
 
     position: relative;
 
-    margin: 0 50px;
-
-    background-color: darkgray;
+    margin: 0 100px;
 
     border-radius: 3px;
+
+    background-color: black;
+}
+
+#image_slider img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    opacity: 0.6;
+
+    border-radius: inherit;
+}
+
+#image_slider #center_texts {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+
+    transform: translateX(-50%) translateY(-50%);
+
+    text-align: center;
+}
+
+#center_texts #artist {
+    color: #E5E5E5;
+}
+
+#center_texts #design_title {
+    color: #F8F9FA;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 #image_counter {
@@ -93,7 +123,7 @@ header .horizontal_list #divider_line {
 
     position: absolute;
     left: 50%;
-    bottom: 20px; 
+    bottom: 40px; 
 
     transform: translateX(-50%);
 }
@@ -118,7 +148,7 @@ header .horizontal_list #divider_line {
     align-items: center;
     flex-wrap: wrap;
 
-    margin: 50px 50px 20px;
+    margin: 100px 100px 45px;
 }
 
 .category_header h2 {
@@ -134,7 +164,7 @@ header .horizontal_list #divider_line {
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 25px;
 
     color: #C4C4C4;
 }
@@ -150,9 +180,9 @@ header .horizontal_list #divider_line {
 #basic_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 40px 30px;
 
-    margin: 0 50px;
+    margin: 0 100px;
 }
 
 #basic_grid img {
@@ -167,7 +197,7 @@ header .horizontal_list #divider_line {
 #basic_grid .date {
     color: #495057;
 
-    margin: 10px 0;
+    margin: 30px 0 15px;
 }
 
 #basic_grid .design_title {
@@ -184,9 +214,9 @@ header .horizontal_list #divider_line {
 #trending {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 30px;
 
-    margin: 0 50px;
+    margin: 0 100px;
 }
 
 #trending div:first-child {
@@ -216,17 +246,18 @@ header .horizontal_list #divider_line {
 
 #trending .trending_text_container {
     position: absolute;
-    left: 20px;
-    bottom: 20px;
+    left: 50px;
+    bottom: 50px;
 }
 
 .trending_text_container .date {
     color: #E5E5E5;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .trending_text_container .design_title {
     color: #F8F9FA;
+    font-size: 16px;
 }
 
 #trending > div:hover img {
@@ -241,8 +272,8 @@ header .horizontal_list #divider_line {
 
 /* --------- Footer --------- */
 footer {
-    padding: 50px;
-    margin-top: 50px; 
+    padding: 100px;
+    margin-top: 100px; 
 
     background-color: #212529;
 }
@@ -254,7 +285,7 @@ footer .logo {
 footer hr {
     height: 1px;
     
-    margin: 20px 0;
+    margin: 40px 0;
     
     border: none;
     

@@ -7,13 +7,15 @@
     
     <link rel="stylesheet" href="style.css">
 
+    <script src="slider.js"></script>
+
     <script src="https://kit.fontawesome.com/4455646216.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="startslider()">
     <header class="horizontal_list">
         <div class="logo">VENCE<span id="colored_dot">.</span></div>
         <div class="horizontal_list">
@@ -32,9 +34,10 @@
     </header>
 
     <div id="image_slider">
-        <div>
-            <p></p>
-            <p></p>
+        <img src="imgs\cae73ca4d0a568b6f5f311eda67afe55.jpg" alt="Legjobb kép" id="image_slider_image">
+        <div id="center_texts">
+            <p id="artist">Tomas Edwardo</p>
+            <p id="design_title">Instagram artists with great photography skills</p>
         </div>
 
         <div id="image_counter">
